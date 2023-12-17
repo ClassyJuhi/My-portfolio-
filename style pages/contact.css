@@ -83,3 +83,10 @@ h1{
         transform: translateY(0);
     }
 }
+
+@media (max-width:500px)  {
+    .contactSection .contactSubsection {
+        margin: 5px;
+        padding: 5px;
+    }
+}

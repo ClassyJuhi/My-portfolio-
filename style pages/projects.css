@@ -1,3 +1,4 @@
+
 .projectsBox{
     margin-top: 50px;
     width: 100%;
@@ -6,6 +7,7 @@
     justify-content: center;
 }
 .projectIntro{
+    width: 100%;
     min-height: 80vh;
     display: flex;
     flex-wrap: wrap-reverse;
@@ -43,7 +45,7 @@ span{
     display: flex;
     justify-content: space-around;
 }
-.pro{
+.projectIntro{
     animation: movePro 1s linear 1 forwards;
 }
 @keyframes movePro{
@@ -54,7 +56,9 @@ span{
         transform: translateY(0%);
     }
 }
-
+.projectIntro img{
+    width: 580px;
+}
 .projectBoxes{
     display: flex;
     justify-content: space-around;
@@ -66,6 +70,20 @@ span{
 .projectBoxes.show-animate{
     opacity: 1;
     transform: translateY(0%);
+}
+
+.moreProjects{
+    margin: 20px 0;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: #03396c;
+    font-size: 20px;
+    font-weight: 800;
+}
+.moreProjects a{
+    color: #c7dbed;
 }
 
 @media(max-width:1000px){

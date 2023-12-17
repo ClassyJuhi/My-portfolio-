@@ -88,7 +88,7 @@
 
 
 
-@media(max-width:600px){
+@media(max-width:1000px){
     .experienceText{
         max-width: 100%;
     }
@@ -101,5 +101,14 @@
     .workExp{
         flex-direction: column;
         text-align: center;
+    }
+    .experienceBox{
+        padding: 2px;
+    }
+    .experienceBox h3{
+        padding-top: 10px;
+    }
+    .workExpBox h5{
+        padding: 2px 0;
     }
 }

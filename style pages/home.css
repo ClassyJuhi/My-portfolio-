@@ -42,7 +42,7 @@ p{
 }
 .intro .textSection ul{
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     transform: translateX(-10px);
 }
@@ -90,7 +90,6 @@ img{
 }
 .section{
     min-height: 100vh;
-    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -166,11 +165,12 @@ h2.show-animate{
     padding: 2px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 #skillIcons li{
     position: relative;
+    padding: 10px;
 }
 #skillIcons li i{
     font-size: 48.25px;
@@ -189,7 +189,7 @@ h2.show-animate{
 #skillIcons li::before {
     position: absolute;
     top: -5px;
-    left: 12px;
+    left: 0px;
     font-size: 16px;
     font-weight: 900;
     display: none;
@@ -197,6 +197,9 @@ h2.show-animate{
 
 #skillIcons li:hover::before{
     display: block;
+}
+#skillIcons li{
+    vertical-align: top;
 }
 
 .uiUx{
@@ -215,6 +218,7 @@ h2.show-animate{
 }
 #skillUi li{
     position: relative;
+    padding: 10px;
 }
 #skillUi li:nth-child(1)::before{content: 'Figma';}
 #skillUi li:nth-child(2)::before{content: 'Canva';}
@@ -223,7 +227,7 @@ h2.show-animate{
 #skillUi li::before {
     position: absolute;
     top: -5px;
-    left: 12px;
+    left: 0px;
     font-size: 16px;
     font-weight: 900;
     display: none;
@@ -284,7 +288,6 @@ h2.show-animate{
 
 @media(max-width:1000px){
     nav{
-        padding: 30px 10px;
         justify-content: space-between;
     }
     #navLi{
@@ -293,9 +296,15 @@ h2.show-animate{
     #openSidebar{
         display: block;
     }
+    .intro{
+        padding: 0 5px;
+    }
     .introtext{
         align-items: center;
         margin: 0;
+    }
+    h1{
+        font-size: 30px;
     }
     p{
         font-size: 16px;
@@ -311,19 +320,19 @@ h2.show-animate{
         margin: 0;
         padding: 0 10px;
     }
+    #skillIcons li img{
+        transform: translateY(-10px);
+    }
 }
 
 
-@media(max-width:360px){
+@media(max-width:500px){
     body{
         text-align: center;
     }
     .intro{
         min-height: auto;
         justify-content: space-evenly;
-    }
-    h1{
-        font-size: 35px;
     }
     .section h2{
         font-size: 25px;
